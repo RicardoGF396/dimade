@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative z-50">
       <nav className="w-full p-6 flex items-center justify-between">
         <img className="w-[220px]" src={Logo} alt="logo dimade" />
         {!isScreenBig && (

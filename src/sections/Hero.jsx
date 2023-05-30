@@ -1,6 +1,8 @@
 import { useMediaQuery } from "react-responsive";
 import bannerMobile from "../assets/dimade mobile.jpg";
 import bannerDesktop from "../assets/dimade-desktop.jpg";
+import banner2 from "../assets/banner2.webp";
+import banner3 from "../assets/banner3.webp";
 import Tepatitlan from "../assets/morelos.png";
 import Lagos from "../assets/Lagos.png";
 import Gto from "../assets/Gto.png";
@@ -24,11 +26,29 @@ function Hero() {
   return (
     <div id="#">
       <div className="w-full flex justify-center items-center flex-col lg:flex-row-reverse lg:justify-between  ">
-        <img
-          className="w-[342px] lg:w-[50vw] lg:h-[110vh] lg:object-cover lg:-mt-[98px] "
-          src={isScreenBig ? bannerDesktop : bannerMobile}
-          alt="banner-mobile-dimade"
-        />
+        <div>
+          {isScreenBig ? (
+            <div className=" w-[50vw] h-[110vh] lg:-mt-[98px] overflow-hidden">
+              <Slider
+                infinite={true}
+                slidesToScroll={1}
+                slidesToShow={1}
+                autoplay={true}
+                autoplaySpeed={2000}
+              >
+                <img src={bannerDesktop} alt="image"/>
+                <img className="w-full h-[110vh] object-cover " src={banner2} alt="image"/>
+                <img src={banner3} alt="image"/>
+              </Slider>
+            </div>
+          ): (
+            <img
+            className="w-[342px] "
+            src={isScreenBig ? bannerDesktop : bannerMobile}
+            alt="banner-mobile-dimade"
+          />
+          )}
+        </div>
 
         <div className="mt-8 px-6  lg:flex lg:justify-center lg:w-[50vw] lg:h-[90vh]  lg:items-center">
           <div className="lg:w-[524px] lg:-mt-12">
