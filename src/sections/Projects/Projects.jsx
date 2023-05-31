@@ -15,7 +15,7 @@ function Projects() {
   const isScreenBig = useMediaQuery({ minWidth: 1024 });
 
   return (
-    <div id="proyectos" className="mt-[96px] px-5 w-full flex justify-center items-center ">
+    <div id="proyectos" className="mt-[96px] px-5 xl:px-10 w-full flex justify-center items-center overflow-hidden">
       <div className="max-w-[1440px]">
         <p className="mx-5 text-gray-400 font-medium">Proyectos</p>
         <h2 className="mx-5 font-semibold text-[#1E1E1E] text-3xl lg:text-4xl mb-8">
@@ -23,6 +23,7 @@ function Projects() {
         </h2>
 
         {isScreenBig ? (
+          <div className="">
           <Slider
             dots={true}
             arrows={true}
@@ -38,6 +39,7 @@ function Projects() {
             <Project img={Valvula} />
             <Project img={Cisterna} />
           </Slider>
+          </div>
         ) : (
           <div className="w-screen overflow-hidden">
             <Slider
@@ -58,7 +60,7 @@ function Projects() {
           </div>
         )}
 
-        <div className="mt-14 flex flex-col gap-y-6 px-5 lg:px-0">
+        <div className="mt-14 flex flex-col gap-y-6 px-5 lg:px-5">
           <ProjectItem description="Sistema de tierras en PROAM AMARA" />
           <ProjectItem description="Arreglo Mecanico de distribucion en El Nogal. Ocotlan, Jalisco." />
           <ProjectItem description="Conexión Eléctrica en Rectificador, en Lagos de Moreno, Jalisco." />

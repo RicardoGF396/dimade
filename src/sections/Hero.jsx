@@ -28,7 +28,7 @@ function Hero() {
       <div className="w-full flex justify-center items-center flex-col lg:flex-row-reverse lg:justify-between  ">
         <div>
           {isScreenBig ? (
-            <div className=" w-[50vw] h-[110vh] lg:-mt-[98px] overflow-hidden">
+            <div className=" w-[50vw] h-[110vh] lg:-mt-[240px] overflow-hidden">
               <Slider
                 infinite={true}
                 slidesToScroll={1}
@@ -36,17 +36,42 @@ function Hero() {
                 autoplay={true}
                 autoplaySpeed={2000}
               >
-                <img src={bannerDesktop} alt="image"/>
-                <img className="w-full h-[110vh] object-cover " src={banner2} alt="image"/>
-                <img src={banner3} alt="image"/>
+                <img
+                  className="w-full h-[110vh] object-cover "
+                  src={bannerDesktop}
+                  alt="image"
+                />
+                <img
+                  className="w-full h-[110vh] object-cover "
+                  src={banner2}
+                  alt="image"
+                />
+                <img
+                  className="w-full h-[110vh] object-cover "
+                  src={banner3}
+                  alt="image"
+                />
               </Slider>
             </div>
-          ): (
-            <img
-            className="w-[342px] "
-            src={isScreenBig ? bannerDesktop : bannerMobile}
-            alt="banner-mobile-dimade"
-          />
+          ) : (
+            <div className="w-[100vw] h-[50vh] overflow-hidden border">
+              <Slider
+                infinite={true}
+                slidesToScroll={1}
+                slidesToShow={1}
+                autoplay={true}
+                autoplaySpeed={2000}
+                dots={true}
+              >
+                <img
+                  className="h-[50vh] object-cover"
+                  src={bannerMobile}
+                  alt="banner-mobile-dimade"
+                />
+                <img className="h-[50vh] object-cover" src={banner2} alt="banner2" />
+                <img className="h-[50vh] object-cover" src={banner3} alt="banner2" />
+              </Slider>
+            </div>
           )}
         </div>
 
@@ -59,7 +84,10 @@ function Hero() {
               DIMADE es una empresa 100% Mexicana, dedicada a la Industria de la
               Construcción en obra privada y publica.
             </p>
-            <a href="mailto:info@dimade.com" className="font-medium text-white bg-[#1e1e1e] px-8 py-4 mt-4">
+            <a
+              href="mailto:info@dimade.com"
+              className="font-medium text-white bg-[#1e1e1e] px-8 py-4 mt-4"
+            >
               Contáctanos
             </a>
           </div>

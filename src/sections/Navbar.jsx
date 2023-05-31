@@ -1,8 +1,8 @@
-import Logo from "../assets/LogoDimade.png"
+import Logo from "../assets/LogoDimade_PNG.png";
 import Menu from "../assets/menu.svg";
 import Close from "../assets/close.svg";
 import BotonContacto from "../assets/BotonContacto.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 function Navbar() {
@@ -10,42 +10,54 @@ function Navbar() {
   const isScreenBig = useMediaQuery({ minWidth: 1024 });
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
+    }
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+    }
+  }, [isOpen]);
+
   return (
-    <div className="w-full relative z-50">
+    <div className={`w-full relative z-50`}>
       <nav className="w-full p-6 flex items-center justify-between">
-        <img className="w-[220px]" src={Logo} alt="logo dimade" />
+        <img className="w-[180px]" src={Logo} alt="logo dimade" />
         {!isScreenBig && (
           <img
-          onClick={toggleMenu}
-          className="cursor-pointer"
-          src={Menu}
-          alt="menu"
-        />
+            onClick={toggleMenu}
+            className="cursor-pointer"
+            src={Menu}
+            alt="menu"
+          />
         )}
 
         {isScreenBig && (
           <>
             <ul className="flex gap-x-9 flex-row">
-              <a href="#">
+              <a onClick={toggleMenu} href="#">
                 <li className="text-base font-medium">Inicio</li>
               </a>
-              <a href="#nosotros">
+              <a onClick={toggleMenu} href="#nosotros">
                 <li className="text-base font-medium">Nosotros</li>
               </a>
-              <a href="#servicios">
+              <a onClick={toggleMenu} href="#servicios">
                 <li className="text-base font-medium">Servicios</li>
               </a>
-              <a href="#proyectos">
+              <a onClick={toggleMenu} href="#proyectos">
                 <li className="text-base font-medium">Proyectos</li>
               </a>
-              <a href="#contacto">
+              <a onClick={toggleMenu} href="#contacto">
                 <li className="text-base font-medium">Contacto</li>
               </a>
             </ul>
-            <a href="mailto:info@dimade.com">
+            <a onClick={toggleMenu} href="mailto:info@dimade.com">
               <img src={BotonContacto} alt="Contacto" />
             </a>
           </>
@@ -64,19 +76,19 @@ function Navbar() {
           alt="close"
         />
         <ul className="flex gap-y-9 flex-col pl-8 mt-24">
-          <a href="#">
+          <a onClick={toggleMenu} href="#">
             <li className="text-5xl">Inicio</li>
           </a>
-          <a href="#nosotros">
+          <a onClick={toggleMenu} href="#nosotros">
             <li className="text-5xl">Nosotros</li>
           </a>
-          <a href="#servicios">
+          <a onClick={toggleMenu} href="#servicios">
             <li className="text-5xl">Servicios</li>
           </a>
-          <a href="#proyectos">
+          <a onClick={toggleMenu} href="#proyectos">
             <li className="text-5xl">Proyectos</li>
           </a>
-          <a href="#contacto">
+          <a onClick={toggleMenu} href="#contacto">
             <li className="text-5xl">Contacto</li>
           </a>
           <p className="">
