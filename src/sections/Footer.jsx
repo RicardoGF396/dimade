@@ -1,4 +1,4 @@
-import Logo from "../assets/LogoDimade.png"
+import Logo from "../assets/LogoDimade_PNG.png"
 
 function Footer() {
   return (
