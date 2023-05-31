@@ -54,8 +54,8 @@ function Services() {
         </div>
 
         {/* Otros servicios */}
-        <div className="mt-12 lg:grid lg:grid-cols-2 lg:mt-16">
-          <div className="flex w-full justify-center">
+        <div className="mt-12 lg:grid lg:grid-cols-2 lg:mt-16 gap-x-4">
+          <div className="flex w-full justify-center ">
             <img className="lg:w-[600px] object-cover " src={Construyendo} alt="construyendo" />
           </div>
           <div>

@@ -3,7 +3,7 @@ import Logo from "../assets/LogoDimade.png"
 function Footer() {
   return (
     <div className="mt-[96px] px-5 w-full flex flex-col justify-center items-center ">
-      <div className="w-full lg:w-[1440px] lg:px-5">
+      <div className="w-full lg:max-w-[1440px] lg:px-5">
       <div className="flex flex-col gap-y-6 lg:flex-row lg:justify-between">
         <div className="lg:w-[316px] flex flex-col gap-y-4 ">
         <img className="w-[200px] lg:w-auto mb-4" src={Logo} alt="logo" />

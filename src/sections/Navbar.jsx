@@ -57,7 +57,7 @@ function Navbar() {
                 <li className="text-base font-medium">Contacto</li>
               </a>
             </ul>
-            <a onClick={toggleMenu} href="mailto:info@dimade.com">
+            <a onClick={toggleMenu} href="mailto:hola@dimade.com.mx">
               <img src={BotonContacto} alt="Contacto" />
             </a>
           </>

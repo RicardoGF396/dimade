@@ -6,8 +6,8 @@ import ClientesIcon from "../assets/clientes.svg";
 function About() {
   return (
     <div id="nosotros" className="mt-12 lg:flex lg:justify-end lg:flex-col lg:items-center">
-      <div className="px-5 lg:w-[1244px] lg:px-0 lg:flex lg:justify-between lg:mb-8">
-        <div className="lg:w-[700px] ">
+      <div className="px-5 lg:max-w-[1244px] lg:px-0 lg:flex lg:justify-between lg:mb-8">
+        <div className="lg:max-w-[700px] ">
           <p className="text-gray-400 font-medium">Nosotros</p>
           <h2 className="font-semibold text-[#1E1E1E] text-2xl lg:text-4xl ">
             Compromiso, responsabilidad y honestidad es lo que nos distingue
@@ -41,8 +41,8 @@ function About() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-y-12 px-5 lg:w-[1440px] lg:flex-row lg:justify-between lg:items-center lg:mt-12">
-        <div className="flex flex-col items-center lg:w-[380px] ">
+      <div className="flex flex-col gap-y-12 px-5 lg:max-w-[1440px] lg:px-0 lg:flex-row lg:justify-between lg:gap-x-8 lg:items-center lg:mt-12">
+        <div className="flex flex-col items-center lg:max-w-[380px] ">
           <img className="w-[80px] " src={VanguardistasIcon} alt="icon" />
           <h3 className="text-[#1E1E1E] font-semibold text-2xl text-center">
             Somos vanguardistas en nuestros proyectos
@@ -53,7 +53,7 @@ function About() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center lg:w-[380px]">
+        <div className="flex flex-col items-center lg:max-w-[380px]">
           <img className="w-[80px] " src={ResponsabilidadIcon} alt="icon" />
           <h3 className="text-[#1E1E1E] font-semibold text-2xl text-center">
             Responsabilidad y Compromiso con nuestros clientes
@@ -64,7 +64,7 @@ function About() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center lg:w-[380px]">
+        <div className="flex flex-col items-center lg:max-w-[380px]">
           <img className="w-[80px] " src={ClientesIcon} alt="icon" />
           <h3 className="text-[#1E1E1E] font-semibold text-2xl text-center">
             Relación con los clientes transparente

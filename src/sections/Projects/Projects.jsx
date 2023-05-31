@@ -12,10 +12,13 @@ import { useMediaQuery } from "react-responsive";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
-  const isScreenBig = useMediaQuery({ minWidth: 1024 });
+  const isScreenBig = useMediaQuery({ minWidth: 1220 });
 
   return (
-    <div id="proyectos" className="mt-[96px] px-5 xl:px-10 w-full flex justify-center items-center overflow-hidden">
+    <div
+      id="proyectos"
+      className="mt-[96px] px-5 xl:px-10 w-full flex justify-center items-center overflow-hidden"
+    >
       <div className="max-w-[1440px]">
         <p className="mx-5 text-gray-400 font-medium">Proyectos</p>
         <h2 className="mx-5 font-semibold text-[#1E1E1E] text-3xl lg:text-4xl mb-8">
@@ -23,22 +26,24 @@ function Projects() {
         </h2>
 
         {isScreenBig ? (
-          <div className="">
-          <Slider
-            dots={true}
-            arrows={true}
-            infinite={true}
-            slidesToShow={4}
-            centerMode={true}
-            draggable={true}
-          >
-            <Project img={Drenaje} />
-            <Project img={Filtracion} />
-            <Project img={Acero} />
-            <Project img={Rancho} />
-            <Project img={Valvula} />
-            <Project img={Cisterna} />
-          </Slider>
+          <div className="flex items-center" >
+            <div className="w-full">
+              <Slider
+                dots={true}
+                arrows={true}
+                infinite={true}
+                slidesToShow={3}
+                centerMode={true}
+                draggable={true}
+              >
+                <Project img={Drenaje} />
+                <Project img={Filtracion} />
+                <Project img={Acero} />
+                <Project img={Rancho} />
+                <Project img={Valvula} />
+                <Project img={Cisterna} />
+              </Slider>
+            </div>
           </div>
         ) : (
           <div className="w-screen overflow-hidden">

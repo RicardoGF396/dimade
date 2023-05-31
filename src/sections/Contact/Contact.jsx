@@ -24,7 +24,7 @@ function Contact() {
 
   return (
     <div id="contacto" className="mt-[96px] lg:px-5 w-full flex flex-col justify-center items-center ">
-      <div className="w-full lg:w-[1440px]">
+      <div className="w-full lg:max-w-[1440px]">
         <p className="mx-5 text-gray-400 font-medium">Contacto</p>
         <h2 className="mx-5 font-semibold text-[#1E1E1E] text-3xl lg:text-4xl mb-8">
           Estaremos encantados de poder trabajar contigo
@@ -40,7 +40,7 @@ function Contact() {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      <div className="w-full lg:w-[1440px] mt-12 flex flex-col gap-y-12 justify-center items-center lg:flex-row lg:justify-between">
+      <div className="w-full lg:max-w-[1440px] mt-12 flex flex-col gap-y-12 justify-center items-center lg:flex-row lg:justify-between">
         <div className=" w-full flex flex-col lg:flex-row lg:gap-x-16 lg:items-center">
           <div className="px-4">
             <h2 className="font-semibold text-[#1E1E1E] text-2xl lg:text-3xl mb-8 lg:w-[572px]">
@@ -81,7 +81,7 @@ function Contact() {
               <ToastContainer/>
             </form>
           </div>
-          <div className="flex w-full justify-center items-center gap-y-6 mt-12 lg:mt-0  flex-col lg:flex-row gap-x-6 lg:items-start">
+          <div className="flex w-full justify-center items-center gap-y-6 mt-12 lg:mt-0  flex-col xl:flex-row gap-x-6 lg:items-start">
             <ContactItem
               icon={MapIcon}
               title="Dirección"
