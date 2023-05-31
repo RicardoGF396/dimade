@@ -93,9 +93,9 @@ function Contact() {
             <ContactItem
               icon={MailIcon}
               title="Correo electrónico"
-              description="info@dimade.com"
+              description="hola@dimade.com.mx"
               linkText="Email"
-              link="mailto:info@dimade.com"
+              link="mailto:hola@dimade.com.mx"
             />
           </div>
         </div>
