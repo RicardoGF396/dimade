@@ -93,7 +93,7 @@ function Navbar() {
           </a>
           <p className="">
             <span className="font-medium">Contacto</span> <br />
-            Hernando de Martel #63-A Col. La Luz C.P. 47425 Lagos de Moreno,
+            Hernando de Martel #63-A Col. La Luz C.P. 47420 Lagos de Moreno,
             Jal.
           </p>
         </ul>
