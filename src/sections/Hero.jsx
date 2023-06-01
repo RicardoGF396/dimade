@@ -1,9 +1,4 @@
 import { useMediaQuery } from "react-responsive";
-import Tepatitlan from "../assets/morelos.png";
-import Lagos from "../assets/Lagos.png";
-import Gto from "../assets/Gto.png";
-import Zapotanejo from "../assets/zapotanejo.png";
-import Bachoco from "../assets/bachoco.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,13 +15,13 @@ import Dimade9 from "../assets/Dimade9.jpg";
 function Hero() {
   const isScreenBig = useMediaQuery({ minWidth: 1024 });
 
-  const slides = [
+  /*const slides = [
     <img className="p-4" src={Tepatitlan} key={1} />,
     <img className="p-4" src={Lagos} key={2} />,
     <img className="p-4" src={Gto} key={3} />,
     <img className="p-4" src={Zapotanejo} key={4} />,
     <img className="p-4" src={Bachoco} key={5} />,
-  ];
+  ];*/
 
   const bannersDesktop = [
     <img src={Dimade1} className="w-full h-[110vh] object-cover " alt="image" key={1} />,
