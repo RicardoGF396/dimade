@@ -9,7 +9,7 @@ function Footer() {
         <img className="w-[200px] lg:w-auto mb-4" src={Logo} alt="logo" />
         <p>DIMADE es una empresa 100% Mexicana, dedicada a la Industria de la Construcción en obra privada y publica.</p>
         <div style={{border: "1px solid #BDBDBD", maxWidth: 443}}></div>
-        <p className="text-gray-500">Hernando de Martel #63-A Col. La Luz C.P. 47425 Lagos de Moreno Jal.</p>
+        <p className="text-gray-500">Hernando de Martel #63-A Col. La Luz C.P. 47420 Lagos de Moreno Jal.</p>
         </div>
         <div>
           <p className="font-medium">Contacto</p>

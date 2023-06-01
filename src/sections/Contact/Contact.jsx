@@ -19,7 +19,7 @@ function Contact() {
       theme: "light",
       });
 
-      emailjs.sendForm('service_tsdb6aq', 'template_mb5jcys', event.target, 'j1_0ZHx0dlQ75Zspx');
+      emailjs.sendForm('service_v8du69c', 'template_28cyigg', event.target, 'eXY0fFyJiYtUqyzav');
   };
 
   return (
@@ -85,7 +85,7 @@ function Contact() {
             <ContactItem
               icon={MapIcon}
               title="Dirección"
-              description="Hernando de Martel #63-A Col. La Luz C.P. 47425 Lagos de Moreno Jal."
+              description="Hernando de Martel #63-A Col. La Luz C.P. 47420 Lagos de Moreno Jal."
               linkText="Ir a mapa"
               link="https://goo.gl/maps/FZQKJth8SUvyDprZ8"
             />
