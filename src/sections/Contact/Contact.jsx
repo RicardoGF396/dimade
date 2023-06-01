@@ -31,7 +31,7 @@ function Contact() {
         </h2>
       </div>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.565935212155!2d-101.93059652506084!3d21.36760998036786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bd24e6a4fecf9%3A0xdc025b586d64640f!2sPrivada%20Hernando%20de%20Martel%2063%2C%20Arboledas%20de%20San%20Martin%2C%2047420%20Lagos%20de%20Moreno%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1685300103883!5m2!1ses-419!2smx"
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3715.7246281919415!2d-101.92868668506176!3d21.361354385819237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDIxJzQwLjkiTiAxMDHCsDU1JzM1LjQiVw!5e0!3m2!1ses-419!2smx!4v1685579900352!5m2!1ses-419!2smx"
         width="100%"
         height="450"
         style={{ border: "0", padding: "0" }}
@@ -87,7 +87,7 @@ function Contact() {
               title="Dirección"
               description="Hernando de Martel #63-A Col. La Luz C.P. 47425 Lagos de Moreno Jal."
               linkText="Ir a mapa"
-              link="https://goo.gl/maps/jcFFEzm1tx16nRBz9"
+              link="https://goo.gl/maps/FZQKJth8SUvyDprZ8"
             />
 
             <ContactItem

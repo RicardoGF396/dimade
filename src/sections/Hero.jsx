@@ -106,7 +106,7 @@ function Hero() {
 
       </div>
       {/* Empresas */}
-      {isScreenBig ? (
+      {/* {isScreenBig ? (
         <div className="flex flex-row justify-center mt-12">
           <div className="w-[80%] flex items-center justify-between">
             <img src={Tepatitlan} alt="tepatitlan morelos" />
@@ -132,7 +132,7 @@ function Hero() {
             {slides.map((slide) => slide)}
           </Slider>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

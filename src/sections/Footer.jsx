@@ -13,7 +13,11 @@ function Footer() {
         </div>
         <div>
           <p className="font-medium">Contacto</p>
-          <p>hola@dimade.com.mx</p>
+
+          <p>hola@dimade.com.mx<br /></p><br/>
+          <p>Juan Eduardo Macías Torres<br />emacias@dimade.com.mx</p><br/>
+          <p>Monica González<br />mgonzalez@diamde.com.mx</p><br/>
+          <p>Julio César Delgado Martínez<br />jdelgado@dimade.com.mx</p>
         </div>
       </div>
 
