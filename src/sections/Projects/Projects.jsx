@@ -5,14 +5,18 @@ import Filtracion from "../../assets/imgFiltraciones.svg";
 import Acero from "../../assets/imgAcero.svg";
 import Rancho from "../../assets/imgRancho.svg";
 import Cisterna from "../../assets/imgCisterna.svg";
+import ArrowLeft from "../../assets/arrowLeft.svg";
+import ArrowRight from "../../assets/arrowRight.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from "react-responsive";
 import ProjectItem from "./ProjectItem";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Projects() {
-  const isScreenBig = useMediaQuery({ minWidth: 1220 });
+  const isScreenBig = useMediaQuery({ minWidth: 425 });
 
   return (
     <div
@@ -26,15 +30,17 @@ function Projects() {
         </h2>
 
         {isScreenBig ? (
-          <div className="flex items-center" >
+          <div className="flex items-center">
             <div className="w-full">
-              <Slider
-                dots={true}
-                arrows={true}
-                infinite={true}
-                slidesToShow={3}
+              <Carousel
+                showThumbs={true}
+                showArrows={true}
+                infiniteLoop={true}
                 centerMode={true}
                 draggable={true}
+                showStatus={false}
+                centerSlidePercentage={33.33}
+                swipeable={true} // Habilitar desplazamiento con el mouse
               >
                 <Project img={Drenaje} />
                 <Project img={Filtracion} />
@@ -42,7 +48,7 @@ function Projects() {
                 <Project img={Rancho} />
                 <Project img={Valvula} />
                 <Project img={Cisterna} />
-              </Slider>
+              </Carousel>
             </div>
           </div>
         ) : (
