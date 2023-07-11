@@ -8,6 +8,7 @@ import { useMediaQuery } from "react-responsive";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const isScreenBig = useMediaQuery({ minWidth: 1024 });
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     if (isOpen) {
@@ -18,6 +19,19 @@ function Navbar() {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const isSticky = scrollPosition > 0;
+      setIsSticky(isSticky);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     if (isOpen) {
       document.documentElement.style.overflow = "hidden";
     } else {
@@ -26,9 +40,13 @@ function Navbar() {
   }, [isOpen]);
 
   return (
-    <div className={`w-full relative z-50`}>
-      <nav className="w-full p-6 flex items-center justify-between">
-        <img className="w-[180px]" src={Logo} alt="logo dimade" />
+    <div  className={`w-full relative z-50 ${isSticky ? "sticky top-0" : ""}`}>
+      <nav
+        className={`w-full p-6 flex items-center justify-between ${
+          isSticky ? "bg-white shadow-lg" : ""
+        }`}
+      >
+        <img className={`duration-100 ${ isSticky ? "w-[100px]" : "w-[180px]" }`} src={Logo} alt="logo dimade" />
         {!isScreenBig && (
           <img
             onClick={toggleMenu}
@@ -41,19 +59,19 @@ function Navbar() {
         {isScreenBig && (
           <>
             <ul className="flex gap-x-9 flex-row">
-              <a onClick={toggleMenu} href="#">
+              <a href="#">
                 <li className="text-base font-medium">Inicio</li>
               </a>
-              <a onClick={toggleMenu} href="#nosotros">
+              <a href="#nosotros">
                 <li className="text-base font-medium">Nosotros</li>
               </a>
-              <a onClick={toggleMenu} href="#servicios">
+              <a href="#servicios">
                 <li className="text-base font-medium">Servicios</li>
               </a>
-              <a onClick={toggleMenu} href="#proyectos">
+              <a href="#proyectos">
                 <li className="text-base font-medium">Proyectos</li>
               </a>
-              <a onClick={toggleMenu} href="#contacto">
+              <a href="#contacto">
                 <li className="text-base font-medium">Contacto</li>
               </a>
             </ul>
