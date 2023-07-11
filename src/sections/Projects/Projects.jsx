@@ -5,8 +5,6 @@ import Filtracion from "../../assets/imgFiltraciones.svg";
 import Acero from "../../assets/imgAcero.svg";
 import Rancho from "../../assets/imgRancho.svg";
 import Cisterna from "../../assets/imgCisterna.svg";
-import ArrowLeft from "../../assets/arrowLeft.svg";
-import ArrowRight from "../../assets/arrowRight.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
