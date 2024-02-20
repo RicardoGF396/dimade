@@ -2,7 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Dimade1 from  "../assets/Dimade1.jpg";
+import Dimade1 from "../assets/Dimade1.jpg";
 import Dimade2 from "../assets/Dimade2.jpg";
 import Dimade3 from "../assets/Dimade3.jpg";
 import Dimade4 from "../assets/Dimade4.jpg";
@@ -24,16 +24,61 @@ function Hero() {
   ];*/
 
   const bannersDesktop = [
-    <img src={Dimade1} className="w-full h-[110vh] object-cover " alt="image" key={1} />,
-    <img src={Dimade2} className="w-full h-[110vh] object-cover " alt="image" key={2} />,
-    <img src={Dimade3} className="w-full h-[110vh] object-cover " alt="image" key={3} />,
-    <img src={Dimade4} className="w-full h-[110vh] object-cover " alt="image" key={4} />,
-    <img src={Dimade5} className="w-full h-[110vh] object-cover " alt="image" key={5} />,
-    <img src={Dimade6} className="w-full h-[110vh] object-cover " alt="image" key={6} />,
-    <img src={Dimade7} className="w-full h-[110vh] object-cover " alt="image" key={7} />,
-    <img src={Dimade8} className="w-full h-[110vh] object-cover " alt="image" key={8} />,
-    <img src={Dimade9} className="w-full h-[110vh] object-cover " alt="image" key={9} />,
-  ]
+    <img
+      src={Dimade1}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={1}
+    />,
+    <img
+      src={Dimade2}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={2}
+    />,
+    <img
+      src={Dimade3}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={3}
+    />,
+    <img
+      src={Dimade4}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={4}
+    />,
+    <img
+      src={Dimade5}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={5}
+    />,
+    <img
+      src={Dimade6}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={6}
+    />,
+    <img
+      src={Dimade7}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={7}
+    />,
+    <img
+      src={Dimade8}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={8}
+    />,
+    <img
+      src={Dimade9}
+      className="w-full h-[110vh] object-cover "
+      alt="image"
+      key={9}
+    />,
+  ];
 
   const bannersMobile = [
     <img src={Dimade1} className="h-[50vh] object-cover" alt="image" key={1} />,
@@ -45,13 +90,11 @@ function Hero() {
     <img src={Dimade7} className="h-[50vh] object-cover" alt="image" key={7} />,
     <img src={Dimade8} className="h-[50vh] object-cover" alt="image" key={8} />,
     <img src={Dimade9} className="h-[50vh] object-cover" alt="image" key={9} />,
-    
-  ]
+  ];
 
   return (
     <div id="#">
       <div className="w-full flex justify-center items-center flex-col lg:flex-row-reverse">
-        
         <div>
           {isScreenBig ? (
             <div className=" w-[50vw] h-[110vh] lg:-mt-[240px] overflow-hidden">
@@ -80,7 +123,7 @@ function Hero() {
             </div>
           )}
         </div>
-            {/* Título */}
+        {/* Título */}
         <div className="mt-8 px-6  lg:flex lg:justify-center lg:w-[50vw] lg:h-[90vh]  lg:items-center">
           <div className="lg:w-[524px] lg:-mt-32">
             <h1 className="font-semibold text-4xl lg:text-6xl">
@@ -88,7 +131,7 @@ function Hero() {
             </h1>
             <p className="my-6">
               DIMADE es una empresa 100% Mexicana, dedicada a la Industria de la
-              Construcción en obra privada y publica.
+              Construcción en obra privada y pública.
             </p>
             <a
               href="#contacto"
@@ -98,7 +141,6 @@ function Hero() {
             </a>
           </div>
         </div>
-
       </div>
       {/* Empresas */}
       {/* {isScreenBig ? (

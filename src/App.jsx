@@ -8,7 +8,7 @@ import Projects from './sections/Projects/Projects'
 import Services from './sections/Services/Services'
 
 function App() {
-
+  
   return (
     <>
       <Navbar />

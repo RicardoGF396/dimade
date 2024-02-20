@@ -1,14 +1,21 @@
 import Logo from "../assets/LogoDimade_PNG.png";
 import Menu from "../assets/menu.svg";
+import Chevron from "../assets/chevron.svg";
 import Close from "../assets/close.svg";
 import BotonContacto from "../assets/BotonContacto.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { services } from "../mocks/services";
+import useServicesStore from "../hooks/store.js";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const isScreenBig = useMediaQuery({ minWidth: 1024 });
   const [isSticky, setIsSticky] = useState(false);
+  const [showServices, setShowServices] = useState(false);
+  const servicesRef = useRef(null);
+
+  const { setService } = useServicesStore();
 
   const toggleMenu = () => {
     if (isOpen) {
@@ -39,14 +46,36 @@ function Navbar() {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(e.target) &&
+        e.target.getAttribute("data-service-button") !== "true" &&
+        !e.target.closest(".service-dropdown")
+      ) {
+        setShowServices(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div  className={`w-full relative z-50 ${isSticky ? "sticky top-0" : ""}`}>
+    <div className={`w-full relative z-50 ${isSticky ? "sticky top-0" : ""}`}>
       <nav
         className={`w-full p-6 flex items-center justify-between ${
           isSticky ? "bg-white shadow-lg" : ""
         }`}
       >
-        <img className={`duration-100 ${ isSticky ? "w-[100px]" : "w-[180px]" }`} src={Logo} alt="logo dimade" />
+        <img
+          className={`duration-100 ${isSticky ? "w-[100px]" : "w-[180px]"}`}
+          src={Logo}
+          alt="logo dimade"
+        />
         {!isScreenBig && (
           <img
             onClick={toggleMenu}
@@ -65,14 +94,42 @@ function Navbar() {
               <a href="#nosotros">
                 <li className="text-base font-medium">Nosotros</li>
               </a>
-              <a href="#servicios">
-                <li className="text-base font-medium">Servicios</li>
-              </a>
+              <div className="relative service-dropdown">
+                <button
+                  ref={servicesRef}
+                  onClick={() => setShowServices(!showServices)}
+                  className="flex items-center gap-x-2 cursor"
+                  type="button"
+                  data-service-button="true"
+                >
+                  <li className="text-base font-medium">Servicios</li>
+                  <img className="w-5" src={Chevron} alt="chevron" />
+                </button>
+
+                {showServices && (
+                  <div className="absolute border translate-x-[-20%] top-8 bg-white w-[300px] h-[300px] shadow-md px-2 rounded-md py-2 overflow-y-auto flex flex-col">
+                    {services.map((service) => (
+                      <a
+                        href="#servicios"
+                        key={service.id}
+                        onClick={() => {
+                          setShowServices(false);
+                          setService(service.name);
+                        }}
+                        className="text-base text-slate-800 px-2 py-1 rounded-md hover:bg-slate-100 text-left"
+                      >
+                        {service.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <a href="#proyectos">
-                <li className="text-base font-medium">Proyectos</li>
+                <li className="text-base font-medium blend">Proyectos</li>
               </a>
               <a href="#contacto">
-                <li className="text-base font-medium">Contacto</li>
+                <li className="text-base font-medium blend">Contacto</li>
               </a>
             </ul>
             <a href="mailto:hola@dimade.com.mx">
