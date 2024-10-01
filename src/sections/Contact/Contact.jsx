@@ -1,6 +1,6 @@
 import ContactItem from "./ContactItem";
-import MapIcon from "../../assets/mapIcon.svg";
-import MailIcon from "../../assets/mailIcon.svg";
+import MapIcon from "../../../public/assets/mapIcon.svg";
+import MailIcon from "../../../public/assets/mailIcon.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";

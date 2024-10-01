@@ -1,11 +1,14 @@
-import Trabajadores from "../assets/trabajadores.jpg";
-import VanguardistasIcon from "../assets/Vanguardistas.svg";
-import ResponsabilidadIcon from "../assets/Responsabilidad.svg";
-import ClientesIcon from "../assets/clientes.svg";
+import Trabajadores from "/public/assets/trabajadores.jpg";
+import VanguardistasIcon from "/public/assets/Vanguardistas.svg";
+import ResponsabilidadIcon from "/public/assets/Responsabilidad.svg";
+import ClientesIcon from "/public/assets/clientes.svg";
 
 function About() {
   return (
-    <div id="nosotros" className="mt-12 lg:flex lg:justify-end lg:flex-col lg:items-center">
+    <div
+      id="nosotros"
+      className="mt-12 lg:flex lg:justify-end lg:flex-col lg:items-center"
+    >
       <div className="px-5 lg:max-w-[1244px] lg:px-0 lg:flex lg:justify-between lg:mb-8">
         <div className="lg:max-w-[700px] ">
           <p className="text-gray-400 font-medium">Nosotros</p>

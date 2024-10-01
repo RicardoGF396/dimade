@@ -1,4 +1,4 @@
-import Construyendo from "../../assets/construyendo.png";
+import Construyendo from "../../../public/assets/construyendo.png";
 import ListItem from "./ListItem";
 import { services } from "../../mocks/services";
 import useServicesStore from "../../hooks/store";

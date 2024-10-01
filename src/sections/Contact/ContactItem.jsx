@@ -1,4 +1,4 @@
-import Arrow from "../../assets/arrow.svg"
+import Arrow from "../../../public/assets/arrow.svg"
 import PropTypes from "prop-types"
 
 function ContactItem({icon, title, description, linkText, link}) {

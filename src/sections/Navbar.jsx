@@ -1,8 +1,9 @@
-import Logo from "../assets/LogoDimade_PNG.png";
-import Menu from "../assets/menu.svg";
-import Chevron from "../assets/chevron.svg";
-import Close from "../assets/close.svg";
-import BotonContacto from "../assets/BotonContacto.svg";
+import Logo from "/assets/LogoDimade_PNG.png";
+import Menu from "/assets/menu.svg";
+import Chevron from "/assets/chevron.svg";
+import Close from "/assets/close.svg";
+import BotonContacto from "/assets/BotonContacto.svg";
+import Intranet from "/assets/intranet.svg";
 import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { services } from "../mocks/services";
@@ -132,9 +133,19 @@ function Navbar() {
                 <li className="text-base font-medium blend">Contacto</li>
               </a>
             </ul>
-            <a href="mailto:hola@dimade.com.mx">
-              <img src={BotonContacto} alt="Contacto" />
-            </a>
+            <div className="flex gap-x-2 items-center">
+              <a href="mailto:hola@dimade.com.mx">
+                <img src={BotonContacto} alt="Contacto" />
+              </a>
+              <a
+                href="https://mail.hostinger.com/"
+                target="_blank"
+                className="p-3 bg-white rounded-full hover:bg-slate-100"
+                rel="noreferrer"
+              >
+                <img className="w-6 h-6" src={Intranet} alt="intranet" />
+              </a>
+            </div>
           </>
         )}
       </nav>
@@ -171,6 +182,15 @@ function Navbar() {
             Hernando de Martel #63-A Col. La Luz C.P. 47420 Lagos de Moreno,
             Jal.
           </p>
+          <a
+            href="https://mail.hostinger.com/"
+            target="_blank"
+            className="p-3 bg-white rounded-full hover:bg-slate-100 flex gap-x-2"
+            rel="noreferrer"
+          >
+            <img className="w-6 h-6" src={Intranet} alt="intranet" />
+            Intranet
+          </a>
         </ul>
       </div>
     </div>

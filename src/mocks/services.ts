@@ -5,9 +5,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Cisternas, Cunetas, Cimentaciones, Edificacion, Muro de contencion, Construccion city gate, ERM, Registro de concreto y Remodelacion.",
         images: [
-            '../../src/assets/obra-civil/obra-civil1.jpg',
-            '../../src/assets/obra-civil/obra-civil2.jpg',
-            '../../src/assets/obra-civil/obra-civil3.jpg',
+            '../../assets/obra-civil/obra-civil1.jpg',
+            '../../assets/obra-civil/obra-civil2.jpg',
+            '../../assets/obra-civil/obra-civil3.jpg',
         ]
     },
     {
@@ -16,9 +16,9 @@ export const services = [
         link: "#servicios",
         descripcion: "ERM, City Gate, Interconexcion, Reparacion Linea Viva y Sandblast.",
         images: [
-            '../../src/assets/obra-mecanica/obra-mecacina2.JPG',
-            '../../src/assets/obra-mecanica/obra-mecanica1.jpg',
-            '../../src/assets/obra-mecanica/obra-mecaninca3.JPG',
+            '../../assets/obra-mecanica/obra-mecacina2.JPG',
+            '../../assets/obra-mecanica/obra-mecanica1.jpg',
+            '../../assets/obra-mecanica/obra-mecaninca3.JPG',
         ]
     },
     {
@@ -27,9 +27,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Excavaciones, Registros, ERM, Electrificacion, Soldadura tuberia de acero 12”, 6”y 4”,Sandblast.",
         images: [
-            '../../src/assets/gasoducto/gasoducto1.jpg',
-            '../../src/assets/gasoducto/gasoducto2.jpg',
-            '../../src/assets/gasoducto/gasoducto3.jpg',
+            '../../assets/gasoducto/gasoducto1.jpg',
+            '../../assets/gasoducto/gasoducto2.jpg',
+            '../../assets/gasoducto/gasoducto3.jpg',
         ]
     },
     {
@@ -38,9 +38,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Línea de Agua, Colectores Sanitarios, Empedrados Ahogados en Concreto, Concreto Hidráulico, Cancha de usos múltiples, Asesoria(Licitaciones, Proyectos, Expedientes) y Auditoría.",
         images: [
-            '../../src/assets/obra publica/obra-publica1.jpg',
-            '../../src/assets/obra publica/obra-publica2.jpg',
-            '../../src/assets/obra publica/obra-public3.jpg',
+            '../../assets/obra publica/obra-publica1.jpg',
+            '../../assets/obra publica/obra-publica2.jpg',
+            '../../assets/obra publica/obra-public3.jpg',
         ]
     },
     {
@@ -49,9 +49,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Vivienda recidencial y Remodelación.",
         images: [
-            '../../src/assets/ejecutivo/ejecutivo1.JPG',
-            '../../src/assets/ejecutivo/ejecutivo2.webp',
-            '../../src/assets/ejecutivo/ejecutivo3.JPG',
+            '../../assets/ejecutivo/ejecutivo1.JPG',
+            '../../assets/ejecutivo/ejecutivo2.webp',
+            '../../assets/ejecutivo/ejecutivo3.JPG',
         ]
     },
     {
@@ -60,9 +60,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Deslinde, Medición de Predios, Subdivisión, Curvas de nivel y Lotificación.",
         images: [
-            '../../src/assets/topografia/topgrafia1.webp',
-            '../../src/assets/topografia/topografia2.webp',
-            '../../src/assets/topografia/topografia3.webp',
+            '../../assets/topografia/topgrafia1.webp',
+            '../../assets/topografia/topografia2.webp',
+            '../../assets/topografia/topografia3.webp',
         ]
     },
     {
@@ -71,9 +71,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Dictamen Estructural para tramide de Protecion civil y Dictamen Estructural para tramite de constancia Educativa para INFEJAL.",
         images: [
-            '../../src/assets/estructural/estructural1.jpg',
-            '../../src/assets/estructural/estructural2.jpg',
-            '../../src/assets/estructural/estructural3.jpg',
+            '../../assets/estructural/estructural1.jpg',
+            '../../assets/estructural/estructural2.jpg',
+            '../../assets/estructural/estructural3.jpg',
         ]
     },
     {
@@ -82,9 +82,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Cálculo Estructural en Estructuras de Concreto.",
         images: [
-            '../../src/assets/calculo-estructural/calestructural1.webp',
-            '../../src/assets/calculo-estructural/calestructural2.webp',
-            '../../src/assets/calculo-estructural/calestructural3.webp',
+            '../../assets/calculo-estructural/calestructural1.webp',
+            '../../assets/calculo-estructural/calestructural2.webp',
+            '../../assets/calculo-estructural/calestructural3.webp',
         ]
     },
     {
@@ -93,9 +93,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Director Responsable de Obra en: San Juan de los Lagos, Tapatitlan de Morelos, Arandas, Guadalajara, etc.",
         images: [
-            '../../src/assets/responsable/responsable1.jpg',
-            '../../src/assets/responsable/responsable2.jpeg',
-            '../../src/assets/responsable/responsable3.jpg',
+            '../../assets/responsable/responsable1.jpg',
+            '../../assets/responsable/responsable2.jpeg',
+            '../../assets/responsable/responsable3.jpg',
         ]
     },
     {
@@ -104,9 +104,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Sistema de Tierras a base de soldadura cadweld.",
         images: [
-            '../../src/assets/tierras/tierras1.jpg',
-            '../../src/assets/tierras/tierras2.jpg',
-            '../../src/assets/tierras/tierras3.webp',
+            '../../assets/tierras/tierras1.jpg',
+            '../../assets/tierras/tierras2.jpg',
+            '../../assets/tierras/tierras3.webp',
         ]
     },
     {
@@ -115,9 +115,9 @@ export const services = [
         link: "#servicios",
         descripcion: "",
         images: [
-            '../../src/assets/cocinas/cocinas1.webp',
-            '../../src/assets/cocinas/cocinas2.webp',
-            '../../src/assets/cocinas/cocinas3.webp',
+            '../../assets/cocinas/cocinas1.webp',
+            '../../assets/cocinas/cocinas2.webp',
+            '../../assets/cocinas/cocinas3.webp',
         ]
     },
     {
@@ -126,9 +126,9 @@ export const services = [
         link: "#servicios",
         descripcion: "Canchas de usos múltiples y Cancha de futbol",
         images: [
-            '../../src/assets/canchas/canchas1.webp',
-            '../../src/assets/canchas/canchas2.webp',
-            '../../src/assets/canchas/canchas3.webp',
+            '../../assets/canchas/canchas1.webp',
+            '../../assets/canchas/canchas2.webp',
+            '../../assets/canchas/canchas3.webp',
         ]
     },
 ]

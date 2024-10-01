@@ -2,15 +2,15 @@ import { useMediaQuery } from "react-responsive";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Dimade1 from "../assets/Dimade1.jpg";
-import Dimade2 from "../assets/Dimade2.jpg";
-import Dimade3 from "../assets/Dimade3.jpg";
-import Dimade4 from "../assets/Dimade4.jpg";
-import Dimade5 from "../assets/Dimade5.jpg";
-import Dimade6 from "../assets/Dimade6.jpg";
-import Dimade7 from "../assets/Dimade7.jpg";
-import Dimade8 from "../assets/Dimade8.jpg";
-import Dimade9 from "../assets/Dimade9.jpg";
+import Dimade1 from "../../public/assets/Dimade1.jpg";
+import Dimade2 from "../../public/assets/Dimade2.jpg";
+import Dimade3 from "../../public/assets/Dimade3.jpg";
+import Dimade4 from "../../public/assets/Dimade4.jpg";
+import Dimade5 from "../../public/assets/Dimade5.jpg";
+import Dimade6 from "../../public/assets/Dimade6.jpg";
+import Dimade7 from "../../public/assets/Dimade7.jpg";
+import Dimade8 from "../../public/assets/Dimade8.jpg";
+import Dimade9 from "../../public/assets/Dimade9.jpg";
 
 function Hero() {
   const isScreenBig = useMediaQuery({ minWidth: 1024 });
